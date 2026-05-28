@@ -1,4 +1,4 @@
-# mc-bot
+# simple-mc-bot
 
 A small Discord bot that starts, stops, and checks on a Minecraft server through slash commands. Built for a friend-group server, easy to host on the same box as the game.
 
@@ -24,7 +24,12 @@ You can optionally run a public tunnel (like [playit.gg](https://playit.gg)) alo
 
 ## Setup
 
-1. Clone this repo onto the box that runs your Minecraft server.
+1. Clone this repo onto the box that runs your Minecraft server:
+
+   ```sh
+   git clone https://github.com/ModzabazeR/simple-mc-bot.git
+   cd simple-mc-bot
+   ```
 
 2. Install dependencies:
 
@@ -75,10 +80,10 @@ The bot logs in, registers its slash commands, and waits. Use the slash commands
 To peek at what the Minecraft server is actually doing, attach to the tmux session:
 
 ```sh
-tmux attach -t mc-cisco       # press Ctrl-b then d to detach
+tmux attach -t minecraft-server       # press Ctrl-b then d to detach
 ```
 
-(`mc-cisco` is the default session name. If you changed `MC_TMUX_SESSION` in your `.env`, use that.)
+(`minecraft-server` is the default session name. If you changed `MC_TMUX_SESSION` in your `.env`, use that.)
 
 ## Keeping it running
 
