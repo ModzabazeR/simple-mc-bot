@@ -1,0 +1,13 @@
+[project]
+name = "mc-bot"
+version = "0.1.0"
+description = "Discord bot for controlling a Minecraft server via tmux"
+requires-python = ">=3.11"
+dependencies = [
+    "discord.py>=2.4",
+    "mcstatus>=11.1",
+    "python-dotenv>=1.0",
+]
+
+[tool.uv]
+package = false
